@@ -40,7 +40,7 @@ public class Enemy extends LivingThing {
             if (damage==0){
                 System.out.printf("%sの攻撃！,,,だが、%sは攻撃を回避した！\n", getName(), opponent.getName(), damage);
 
-            }else if(critical <= 3){
+            }else if(critical < 3){
                 System.out.printf("%sの攻撃！痛恨の一撃！！%sに%dのダメージを与えた！！\n", getName(), opponent.getName(), damage*2);
                 opponent.wounded(damage*2);
             }
